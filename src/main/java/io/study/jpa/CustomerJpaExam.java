@@ -7,7 +7,7 @@ import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
 public class CustomerJpaExam {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("customer-exam1");
 
@@ -22,14 +22,32 @@ public class CustomerJpaExam {
         // 트랜잭션 시작
         tx.begin();
 
-        // Customer create
-        em.persist(Customer.sample());
+        try {
+            // Customer create
+//            em.persist(Customer.sample());
 
-        // 이상없으면 commit
-        tx.commit();
+            // 엔티티 매니저의 find 메소드로 객체 찾기      find(Customer 객체로 받을것임, ID )
+            // 엔티티 매니저는 데이터를 가지고 왔을 때 기본생성자를 만들어서 Customer 객체를 생성 할 수 있어야 한다.
+            Customer foundCustomer = em.find(Customer.class, "ID0001");
 
-        // 관련 리소스 반납 후 종료
-        em.close();
+            // 수정
+            // 트랜잭션 내에서 객체의 값이 변경 되고 커밋이 되면 자동으로 엔티티매니저가 관리하에 있는 data는 update 한다.
+//            foundCustomer.setName("Park");
+
+            // 삭제
+            em.remove(foundCustomer);
+
+            System.out.println(foundCustomer.toString());
+
+            // 이상없으면 commit
+            tx.commit();
+
+        } catch (Exception e) {
+            tx.rollback();
+        }finally {
+            // 관련 리소스 반납 후 종료
+            em.close();
+        }
         emf.close();
     }
 }
