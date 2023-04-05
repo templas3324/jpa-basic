@@ -1,0 +1,27 @@
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="customer-exam1">
+        <properties>
+
+            <!-- 엔티티 매니저 펙토리에 있는 엔티티 매니저를 통해 Unit을 갖고 오기 위해서  -->
+            <!-- persistence-unit을 여러개 만들 수 있는데 그 중 customer-exam unit을 명시하기 위한 이름이다. -->
+            <!-- H2 DB            -->
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/db/jpa-study"/>
+
+            <!-- DB에 따라 SQL이 조금씩 차이가 있다. jpa 라이브러리인 hibernate가 Dialect에 맞는 sql을 생성해준다. -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+
+            <!-- Option           -->
+            <property name="hibernate.show_sql" value="true"/>          <!-- 쿼리 보기 -->
+            <property name="hibernate.format_sql" value="true"/>        <!-- 쿼리 보기 편하게 포맷 -->
+            <property name="hibernate.use_sql_comments" value="true"/>  <!-- 관련 코맨트 보기 -->
+        </properties>
+    </persistence-unit>
+</persistence>
