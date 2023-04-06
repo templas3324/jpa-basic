@@ -28,16 +28,23 @@ public class CustomerJpaExam {
 
             // 엔티티 매니저의 find 메소드로 객체 찾기      find(Customer 객체로 받을것임, ID )
             // 엔티티 매니저는 데이터를 가지고 왔을 때 기본생성자를 만들어서 Customer 객체를 생성 할 수 있어야 한다.
-            Customer foundCustomer = em.find(Customer.class, "ID0001");
+//            Customer foundCustomer = em.find(Customer.class, "ID0001");
 
             // 수정
             // 트랜잭션 내에서 객체의 값이 변경 되고 커밋이 되면 자동으로 엔티티매니저가 관리하에 있는 data는 update 한다.
 //            foundCustomer.setName("Park");
 
             // 삭제
-            em.remove(foundCustomer);
+//            em.remove(foundCustomer);
 
-            System.out.println(foundCustomer.toString());
+//            System.out.println(foundCustomer.toString());
+
+            Customer customer = new Customer("ID0001", "Kim");
+            em.persist(customer);   // Insert x commit(또는 flush) 됐을 때 반영됨
+
+            Customer cus02 = em.find(Customer.class, "ID0002");
+            System.out.println(cus02.toString());
+
 
             // 이상없으면 commit
             tx.commit();

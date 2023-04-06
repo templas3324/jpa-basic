@@ -25,6 +25,6 @@ public class Customer {
     }
 
     public static Customer sample(){
-        return new Customer("ID0001", "Kim");
+        return new Customer("ID0002", "Park");
     }
 }

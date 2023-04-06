@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c814ff0-2f16-4839-8ae6-a78df183305e" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-exam1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-exam1.iml" afterDir="false" />
+    <list default="true" id="6c814ff0-2f16-4839-8ae6-a78df183305e" name="Changes" comment="fix : 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/study/jpa/CustomerJpaExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/study/jpa/CustomerJpaExam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/study/jpa/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/study/jpa/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/study/jpa/CustomerJpaExam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/study/jpa/CustomerJpaExam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/study/jpa/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/study/jpa/entity/Customer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +40,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/UserK/IdeaProjects/customer-exam1"
+    "last_opened_file_path": "C:/Users/UserK/IdeaProjects/customer-exam1",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -85,7 +81,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680698708101</updated>
-      <workItem from="1680698709448" duration="3654000" />
+      <workItem from="1680698709448" duration="4048000" />
+      <workItem from="1680740230611" duration="3619000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1680701395051</created>
@@ -94,7 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680701395051</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat : Customer 객체 read, update, delete 실습">
+      <created>1680703335498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680703335498</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix : 수정">
+      <created>1680703376401</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680703376401</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +124,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="feat : Customer 객체 read, update, delete 실습" />
+    <MESSAGE value="fix : 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix : 수정" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
